@@ -1,0 +1,313 @@
+
+
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /* background-image: url('path_to_background_image'); */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    margin-bottom: 50px; /* Adjust margin to space out sections */
+}
+
+.hero-logo {
+    width: 150px; /* Adjust size as needed */
+    margin-bottom: 20px;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero-section p {
+    font-size: 1.5em;
+    margin: 10px 0 30px;
+}
+
+.app-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.app-buttons a img {
+    width: 150px; /* Adjust size as needed */
+    transition: transform 0.3s;
+}
+
+.app-buttons a img:hover {
+    transform: scale(1.1);
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-cricket img, .hero-football img {
+    width: 300px; /* Adjust size as needed */
+}
+
+.hero-cricket {
+    position: absolute;
+    left: 10%;
+}
+
+.hero-football {
+    position: absolute;
+    right: 10%;
+}
+
+/* Middle Section */
+.middle-section {
+    background-color: #F9F9F9; /* Light background color for contrast */
+    padding: 50px 20px;
+    width: 100%;
+    text-align: center;
+    color: #31145E; /* Use a color that matches the theme */
+}
+
+.middle-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #31145E;
+}
+
+.middle-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.phone-images {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.phone-image {
+    width: 200px; /* Adjust as needed */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.phone-image:hover {
+    transform: scale(1.05);
+}
+
+.feature-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.highlight {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 200px;
+}
+
+.highlight img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.highlight p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+/* FAQ Section */
+.faq-section {
+    background-color: #fff;
+    padding: 40px 20px;
+    width: 100%;
+    text-align: center;
+    color: #31145E;
+}
+
+.faq-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.faq-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #31145E;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.faq-question:hover {
+    background-color: #31145E;
+    color: white;
+}
+
+.faq-answer {
+    margin-top: 10px;
+    font-size: 1.2em;
+    padding: 10px;
+    border-left: 4px solid #31145E;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+/* Customer Reviews Section */
+.reviews-section {
+    background-color: #f9f9f9; /* Light background color for contrast */
+    padding: 40px 20px;
+    width: 100%;
+    text-align: center;
+    color: #31145E;
+}
+
+.reviews-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.reviews-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.review-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+
+.review-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.review-text {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.review-author {
+    font-size: 1em;
+    color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-section p {
+        font-size: 1.2em;
+    }
+
+    .app-buttons a img {
+        width: 120px;
+    }
+
+    .hero-cricket img, .hero-football img {
+        width: 200px;
+    }
+
+    .middle-section h2 {
+        font-size: 2em;
+    }
+
+    .phone-image {
+        width: 150px;
+    }
+
+    .highlight {
+        max-width: 150px;
+        padding: 15px;
+    }
+
+    .highlight img {
+        width: 50px;
+    }
+
+    .faq-section h2 {
+        font-size: 2em;
+    }
+
+    .faq-question {
+        font-size: 1.2em;
+    }
+
+    .faq-answer {
+        font-size: 1em;
+    }
+
+    .reviews-section h2 {
+        font-size: 2em;
+    }
+
+    .review-item {
+        max-width: 200px;
+        padding: 15px;
+    }
+
+    .review-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .review-text {
+        font-size: 1em;
+    }
+
+    .review-author {
+        font-size: 0.9em;
+    }
+}

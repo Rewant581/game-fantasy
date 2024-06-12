@@ -1,0 +1,52 @@
+/* src/Auth.css */
+
+.auth-container {
+    background-color: #F9F9F9; /* Light background for the form */
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 50px auto; /* Center the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container h1 {
+    color: #31145E; /* Dark purple for headings */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    color: #333; /* Dark text color for labels */
+}
+
+.form-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.auth-button {
+    background-color: #31145E; /* Dark purple for the button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-button:hover {
+    background-color: #452a7a; /* Slightly lighter purple on hover */
+}

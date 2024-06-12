@@ -1,0 +1,66 @@
+/* src/Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #31145E; /* Dark purple background color */
+    padding: 10px 50px;
+    color: white;
+}
+
+.navbar-logo img {
+    height: 50px; /* Adjust the height as needed */
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-links li {
+    margin: 0 15px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #E0E0E0; /* Lighter shade for hover effect */
+}
+
+.navbar-auth a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 1em;
+}
+
+.navbar-auth a:hover {
+    color: #E0E0E0; /* Lighter shade for hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-links li {
+        margin: 10px 0;
+    }
+
+    .navbar-auth {
+        margin-top: 10px;
+    }
+}
